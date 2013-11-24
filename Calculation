@@ -1,0 +1,16 @@
+if '__main__' == __name__:
+  n1 = int(raw_input("Enter first number: "))
+  n2 = int(raw_input("Enter second number: "))
+  op = raw_input("Enter operation: ").lower()
+  
+  res = "Unknown Operation"
+  if 'add' == op:
+    res = n1+n2
+  elif 'sub' == op:
+    res = n1-n2
+  elif 'mul' == op:
+    res = n1*n2
+  elif 'div' == op:
+    res = n1/n2
+  
+  print("Result: " + str(res))
